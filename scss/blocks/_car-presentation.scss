@@ -1,0 +1,27 @@
+@use '../variables'as v;
+
+.car-presentation {
+    padding: 3.5em;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--orange {
+        background-color: v.$brightOrange;
+    }
+
+    &--dark-cyan {
+        background-color: v.$darkCyan;
+    }
+
+    &--very-dark-cyan {
+        background-color: v.$veryDarkCyan;
+    }
+
+
+
+    &__button {
+        margin-top: 5rem;
+    }
+}

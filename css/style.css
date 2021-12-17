@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.car-presentation {
+  padding: 3.5em;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.car-presentation--orange {
+  background-color: #e38826;
+}
+.car-presentation--dark-cyan {
+  background-color: #006970;
+}
+.car-presentation--very-dark-cyan {
+  background-color: #004241;
+}
+.car-presentation__button {
+  margin-top: 5rem;
+}
+
+.content__header {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+}
+.content__paragraph {
+  margin-top: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.7;
+}
+
+.button {
+  display: block;
+  width: min-content;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  padding: 0.8em 2em;
+  font-size: 1em;
+  white-space: nowrap;
+}
+.button--orange {
+  color: #e38826;
+}
+.button--dark-cyan {
+  color: #006970;
+}
+.button--very-dark-cyan {
+  color: #004241;
+}
+
+@media (min-width: 760px) {
+  .container {
+    max-width: 940px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .button:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+  }
+
+  .page {
+    height: 100vh;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

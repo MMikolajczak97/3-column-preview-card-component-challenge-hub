@@ -1,0 +1,7 @@
+@mixin container-desktop {
+    .container {
+        max-width: 940px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}

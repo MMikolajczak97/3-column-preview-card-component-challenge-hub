@@ -1,0 +1,8 @@
+@use '../variables'as v;
+
+@mixin button-desktop {
+    .button:hover {
+        background-color: transparent;
+        color: v.$veryLightGray;
+    }
+}

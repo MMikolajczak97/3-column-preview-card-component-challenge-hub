@@ -1,0 +1,26 @@
+@use '../variables'as v;
+
+.button {
+    display: block;
+    width: min-content;
+    background-color: v.$veryLightGray;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid v.$veryLightGray;
+    border-radius: 20px;
+    padding: .8em 2em;
+    font-size: 1em;
+    white-space: nowrap;
+
+
+    &--orange {
+        color: v.$brightOrange;
+    }
+
+    &--dark-cyan {
+        color: v.$darkCyan;
+    }
+
+    &--very-dark-cyan {
+        color: v.$veryDarkCyan;
+    }
+}

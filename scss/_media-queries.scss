@@ -1,0 +1,9 @@
+@use './blocks/container-responsive-mixin'as container-rm;
+@use './blocks/button-responsive-mixin'as button-rm;
+@use './blocks/page-responsive-mixin'as page-rm;
+
+@media (min-width: 760px) {
+    @include container-rm.container-desktop();
+    @include button-rm.button-desktop();
+    @include page-rm.page-desktop();
+}

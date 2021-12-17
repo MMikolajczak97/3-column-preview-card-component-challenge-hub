@@ -1,0 +1,7 @@
+@use '../variables'as v;
+
+.page {
+    display: flex;
+    justify-content: center;
+    background-color: v.$veryLightGray;
+}
