@@ -1,7 +1,7 @@
 @use '../variables'as v;
 
-@mixin button-desktop {
-    .button:hover {
+@mixin link-desktop {
+    .link:hover {
         background-color: transparent;
         color: v.$veryLightGray;
     }

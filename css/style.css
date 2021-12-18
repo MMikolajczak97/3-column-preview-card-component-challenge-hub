@@ -8,6 +8,12 @@ html {
   font-size: 15px;
 }
 
+body {
+  display: grid;
+  place-items: center;
+  background-color: #f2f2f2;
+}
+
 .page {
   display: flex;
   justify-content: center;
@@ -38,7 +44,7 @@ html {
 .car-presentation--very-dark-cyan {
   background-color: #004241;
 }
-.car-presentation__button {
+.car-presentation__link {
   margin-top: 5rem;
 }
 
@@ -47,6 +53,7 @@ html {
   margin-top: 1.5rem;
   color: #f2f2f2;
   font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
 }
 .content__paragraph {
   margin-top: 1.5rem;
@@ -55,7 +62,7 @@ html {
   line-height: 1.7;
 }
 
-.button {
+.link {
   display: block;
   width: min-content;
   background-color: #f2f2f2;
@@ -66,14 +73,23 @@ html {
   font-size: 1em;
   white-space: nowrap;
 }
-.button--orange {
+.link--orange {
   color: #e38826;
 }
-.button--dark-cyan {
+.link--dark-cyan {
   color: #006970;
 }
-.button--very-dark-cyan {
+.link--very-dark-cyan {
   color: #004241;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 @media (min-width: 760px) {
@@ -83,13 +99,13 @@ html {
     flex-wrap: nowrap;
   }
 
-  .button:hover {
+  .link:hover {
     background-color: transparent;
     color: #f2f2f2;
   }
 
   .page {
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
   }
 }
